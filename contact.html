@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Comfort Guest House</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        .contact-info-card {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 1.5rem;
+        }
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gradient-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .map-container {
+            width: 100%;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .faq-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .faq-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .faq-question {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            color: var(--gray-mid);
+            line-height: 1.7;
+            display: none;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+            margin-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Comfort Guest House</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="booking.html" class="btn-primary">Book Now</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=85" alt="Contact Us">
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text fade-up" style="text-align: center; max-width: 100%; margin: 0 auto;">
+                    <h1 class="hero-title" style="font-size: 3.5rem;">
+                        <span class="title-line">Get In</span>
+                        <span class="title-line gold">Touch</span>
+                    </h1>
+                    <p class="hero-subtitle">We're here to help. Reach out to us anytime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 5rem 0;">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="fade-up">
+                    <div class="section-header" style="text-align: left;">
+                        <span class="section-label">Send Message</span>
+                        <h2 class="section-title" style="text-align: left;">Contact <span class="gold">Form</span></h2>
+                    </div>
+
+                    <form class="glass" style="padding: 2rem; border-radius: var(--radius-lg);">
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Full Name *</label>
+                            <input type="text" required class="form-input" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email Address *</label>
+                            <input type="email" required class="form-input" placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Phone Number</label>
+                            <input type="tel" class="form-input" placeholder="+1 (555) 000-0000">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Subject *</label>
+                            <input type="text" required class="form-input" placeholder="What is this about?">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message *</label>
+                            <textarea required class="form-input" rows="5" placeholder="Your message here..." style="resize: vertical;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-lg btn-block btn-glow">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="fade-up">
+                    <div class="section-header" style="text-align: left;">
+                        <span class="section-label">Contact Info</span>
+                        <h2 class="section-title" style="text-align: left;">Reach <span class="gold">Us</span></h2>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">📍</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Visit Us</h3>
+                        <p style="color: var(--gray-mid);">123 Luxury Lane, City Center<br>New York, NY 10001</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">📞</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Call Us</h3>
+                        <p style="color: var(--gray-mid);">
+                            Phone: +1 (555) 123-4567<br>
+                            Toll-Free: 1-800-COMFORT
+                        </p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Email Us</h3>
+                        <p style="color: var(--gray-mid);">
+                            General: info@comfortguesthouse.com<br>
+                            Reservations: booking@comfortguesthouse.com
+                        </p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">🕐</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Working Hours</h3>
+                        <p style="color: var(--gray-mid);">
+                            24/7 Reception & Support<br>
+                            Always here for you
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div style="margin-top: 3rem;" class="fade-up">
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; text-align: center;">Our <span class="gold">Location</span></h3>
+                <div class="map-container glass">
+                    <div style="text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🗺️</div>
+                        <p style="color: var(--gray-mid);">Map integration placeholder<br>123 Luxury Lane, City Center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: 5rem 0; background: var(--navy-light);">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label">Common Questions</span>
+                <h2 class="section-title">Frequently Asked <span class="gold">Questions</span></h2>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        What are the check-in and check-out times?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Check-in is from 3:00 PM and check-out is until 11:00 AM. Early check-in and late check-out can be arranged based on availability.
+                    </div>
+                </div>
+
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        Do you offer airport transportation?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We provide complimentary airport pickup and drop-off service for all our guests. Please inform us of your flight details at least 24 hours in advance.
+                    </div>
+                </div>
+
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        Is parking available?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We offer complimentary valet parking for all guests. Your vehicle will be securely stored in our private parking facility.
+                    </div>
+                </div>
+
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        What is your cancellation policy?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Free cancellation up to 48 hours before check-in. Cancellations within 48 hours will incur a one-night charge. Special event bookings may have different policies.
+                    </div>
+                </div>
+
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        Are pets allowed?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we are pet-friendly! We welcome well-behaved pets with a small additional fee. Please inform us in advance so we can prepare appropriate accommodations.
+                    </div>
+                </div>
+
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        Do you have a restaurant on-site?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our rooftop restaurant serves breakfast, lunch, and dinner with panoramic city views. We also offer 24-hour room service.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content glass fade-up">
+                <h2 class="cta-title">Ready to Book Your Stay?</h2>
+                <p class="cta-text">Experience luxury and comfort at Comfort Guest House</p>
+                <div class="cta-buttons">
+                    <a href="booking.html" class="btn-primary btn-lg btn-glow">Book Now</a>
+                    <a href="rooms.html" class="btn-secondary btn-lg">View Rooms</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-logo">
+                        <span class="logo-icon">✦</span>
+                        Comfort Guest House
+                    </h3>
+                    <p class="footer-description">Experience luxury and comfort in the heart of the city.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>📍 123 Luxury Lane, City Center</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ info@comfortguesthouse.com</li>
+                        <li>🕐 24/7 Available</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="newsletter-text">Subscribe for exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Comfort Guest House. All rights reserved.</p>
+                <p class="developer-credit">Designed & Developed by <a href="#" class="credit-link">Pritam Naskar</a> (Rehan'Z Digital Network)</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/15551234567" class="whatsapp-float" target="_blank">
+        <span class="whatsapp-icon">💬</span>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
