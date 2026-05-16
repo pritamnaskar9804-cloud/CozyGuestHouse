@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Rooms - Comfort Guest House</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Comfort Guest House</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="rooms.html" class="nav-link active">Rooms</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="booking.html" class="btn-primary">Book Now</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1920&q=85" alt="Luxury Rooms">
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text fade-up" style="text-align: center; max-width: 100%; margin: 0 auto;">
+                    <h1 class="hero-title" style="font-size: 3.5rem;">
+                        <span class="title-line">Discover Your Perfect</span>
+                        <span class="title-line gold">Room</span>
+                    </h1>
+                    <p class="hero-subtitle">Choose from our selection of luxury accommodations designed for your comfort</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="featured-rooms">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label">Available Accommodations</span>
+                <h2 class="section-title">All <span class="gold">Rooms & Suites</span></h2>
+            </div>
+
+            <div class="rooms-grid">
+                <!-- Deluxe Room -->
+                <div class="room-card glass fade-up">
+                    <div class="room-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=85" alt="Deluxe Room">
+                        <div class="room-badge">Popular</div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">4.9 (124 reviews)</span>
+                        </div>
+                        <h3 class="room-title">Deluxe Room</h3>
+                        <p class="room-description">Elegant room with king-size bed, city views, and premium amenities for a luxurious stay</p>
+                        <ul class="room-amenities">
+                            <li>🛏️ King Size Bed</li>
+                            <li>📺 Smart TV</li>
+                            <li>❄️ AC</li>
+                            <li>🌐 Free WiFi</li>
+                        </ul>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">Rs 1299<span class="price-unit">/night</span></span>
+                            </div>
+                            <a href="booking.html" class="btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family Suite -->
+                <div class="room-card glass fade-up">
+                    <div class="room-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=85" alt="Family Suite">
+                    </div>
+                    <div class="room-content">
+                        <div class="room-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">5.0 (89 reviews)</span>
+                        </div>
+                        <h3 class="room-title">Family Suite</h3>
+                        <p class="room-description">Spacious suite perfect for families with separate living area and modern amenities</p>
+                        <ul class="room-amenities">
+                            <li>🛏️ 2 Bedrooms</li>
+                            <li>🛋️ Living Area</li>
+                            <li>🍳 Kitchenette</li>
+                            <li>🌐 Free WiFi</li>
+                        </ul>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">Rs 2999<span class="price-unit">/night</span></span>
+                            </div>
+                            <a href="booking.html" class="btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Executive Room -->
+                <div class="room-card glass fade-up">
+                    <div class="room-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=85" alt="Executive Room">
+                        <div class="room-badge gold">Premium</div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">4.8 (156 reviews)</span>
+                        </div>
+                        <h3 class="room-title">Executive Room</h3>
+                        <p class="room-description">Luxury room with workspace, premium bedding, and exclusive business amenities</p>
+                        <ul class="room-amenities">
+                            <li>💼 Work Desk</li>
+                            <li>🛏️ Premium Bedding</li>
+                            <li>☕ Coffee Maker</li>
+                            <li>🌐 High-Speed WiFi</li>
+                        </ul>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">Rs 3999<span class="price-unit">/night</span></span>
+                            </div>
+                            <a href="booking.html" class="btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rooftop Suite -->
+                <div class="room-card glass fade-up">
+                    <div class="room-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=85" alt="Rooftop Suite">
+                        <div class="room-badge gold">Luxury</div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">5.0 (203 reviews)</span>
+                        </div>
+                        <h3 class="room-title">Rooftop Suite</h3>
+                        <p class="room-description">Ultimate luxury with panoramic city views, private terrace, and exclusive amenities</p>
+                        <ul class="room-amenities">
+                            <li>🏙️ City Views</li>
+                            <li>🌅 Private Terrace</li>
+                            <li>🛁 Jacuzzi</li>
+                            <li>🍾 Mini Bar</li>
+                        </ul>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">Rs 2500<span class="price-unit">/night</span></span>
+                            </div>
+                            <a href="booking.html" class="btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standard Room -->
+                <div class="room-card glass fade-up">
+                    <div class="room-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=85" alt="Standard Room">
+                    </div>
+                    <div class="room-content">
+                        <div class="room-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-text">4.7 (98 reviews)</span>
+                        </div>
+                        <h3 class="room-title">Standard Room</h3>
+                        <p class="room-description">Comfortable and affordable room with essential amenities for a pleasant stay</p>
+                        <ul class="room-amenities">
+                            <li>🛏️ Queen Bed</li>
+                            <li>📺 TV</li>
+                            <li>❄️ AC</li>
+                            <li>🌐 WiFi</li>
+                        </ul>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">Rs 799<span class="price-unit">/night</span></span>
+                            </div>
+                            <a href="booking.html" class="btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honeymoon Suite -->
+                <div class="room-card glass fade-up">
+                    <div class="room-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&q=85" alt="Honeymoon Suite">
+                        <div class="room-badge">Romantic</div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">5.0 (167 reviews)</span>
+                        </div>
+                        <h3 class="room-title">Honeymoon Suite</h3>
+                        <p class="room-description">Romantic suite with elegant décor, jacuzzi tub, and special amenities for couples</p>
+                        <ul class="room-amenities">
+                            <li>💕 Romantic Décor</li>
+                            <li>🛁 Jacuzzi Tub</li>
+                            <li>🍾 Champagne</li>
+                            <li>🌹 Rose Petals</li>
+                        </ul>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">Rs 3500<span class="price-unit">/night</span></span>
+                            </div>
+                            <a href="booking.html" class="btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content glass fade-up">
+                <h2 class="cta-title">Need Help Choosing?</h2>
+                <p class="cta-text">Contact our team for personalized room recommendations</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary btn-lg btn-glow">Contact Us</a>
+                    <a href="booking.html" class="btn-secondary btn-lg">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-logo">
+                        <span class="logo-icon">✦</span>
+                        Comfort Guest House
+                    </h3>
+                    <p class="footer-description">Experience luxury and comfort in the heart of the city.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>📍 123 Luxury Lane, City Center</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ info@comfortguesthouse.com</li>
+                        <li>🕐 24/7 Available</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="newsletter-text">Subscribe for exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Comfort Guest House. All rights reserved.</p>
+                <p class="developer-credit">Designed & Developed by <a href="#" class="credit-link">Pritam Naskar</a> (Rehan'Z Digital Network)</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/15551234567" class="whatsapp-float" target="_blank">
+        <span class="whatsapp-icon">💬</span>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
